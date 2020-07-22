@@ -1,0 +1,311 @@
+{
+    "e_cmpgn":[
+        {
+        "prty_dtls": {
+			"pan": "AAACU2414K",
+			"name": "Significant Transactions"
+        },
+        "fy":[
+            {
+                "campInfoId":1,
+                "finYear":"F.Y. 2019-20",
+                "status":"Pending",
+                "color":"steelblue",
+                "dtls": {
+                    "cmpgn_info": [
+                        {
+                           "type": "text",
+                           "pndg_cnt": "text",
+                           "submttd_cnt": "text",
+                           "response": "text",
+                           "confrm": {
+                                "info_smry": [
+                                    {
+                                        "info_type": "cash_dep",
+                                        "info_gp_code": "CD",
+                                        "info_smry_seqid": "1",
+                                        "type": "Cash Deposite",
+                                        "sum_amnt": "31,00,000",
+                                        "styles": {
+                                            "color":"green",
+                                            "iconType":"check_circle_outline"
+                                        },
+                                        "trnsInfrmn": [
+                                            {
+                                              "info_dtl_seqid": "1",
+                                              "info_smry_seqid": "1",
+										      "tsn_id": "101800002",
+                                              "finyr": "2018-19",
+                                              "bankName":"Axis Bank Limited",
+                                              "accNo":"XXX-XXXX-307",
+                                              "infoDesc": "",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+                                              "info_value": "15,45,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "styles": {
+                                                "color":"green",
+                                                "iconType":"check_circle_outline"
+                                              },
+                                              "transOption":[
+                                                 {
+                                                    "optionId":"1",
+                                                    "optionText":"Information is correct"
+                                                 },
+                                                 {
+                                                    "optionId":"2",
+                                                    "optionText":"Information is not fully correct"
+                                                 }
+                                              ],
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ],
+                                              "rspnse": {
+                                              }
+                                            },
+                                            {
+                                              "info_dtl_seqid": "2",
+                                              "info_smry_seqid": "1",
+										      "tsn_id": "101800003",
+                                              "finyr": "2018-19",
+                                              "bankName":"HDFC Bank Limited",
+                                              "accNo":"XXX-XXXX-287",
+                                              "infoDesc": "Information is correct",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+										      "info_value": "19,97,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "styles": {
+                                                "color":"green",
+                                                "iconType":"check_circle_outline"
+                                               },
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ],
+                                              "rspnse": {
+                                                "optn_slctd": "Information is correct",
+                                                "infoConfrmdValue":"11,76,000",
+                                                "resp_dtls": {
+                                                    "rows": [
+                                                    ]
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "info_dtl_seqid": "3",
+                                              "info_smry_seqid": "1",
+										      "tsn_id": "101800004",
+                                              "finyr": "2018-19",
+                                              "bankName":"ICICI Bank Limited",
+                                              "accNo":"XXX-XXXX-394",
+                                              "infoDesc": "Information is not fully correct",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+										      "info_value": "20,85,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "styles": {
+                                                    "color":"red",
+                                                    "iconType":"error_outline"
+                                               },
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ],
+                                              "rspnse": {
+                                                "optn_slctd": "Information is correct",
+                                                "infoConfrmdValue":"11,76,000",
+                                                "resp_dtls": {
+                                                    "rows": [
+                                                        {
+                                                            "element": [
+                                                                {
+                                                                    "key": "Account No",
+                                                                    "value": "23454550943"
+                                                                },
+                                                                {
+                                                                    "key": "Information Value",
+                                                                    "value": "9,50,000"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                              }
+                                            }
+                                        ]
+
+                                    },
+                                    {
+                                        "info_type": "sal_dep",
+                                        "info_gp_code": "SL",
+                                        "info_smry_seqid": "2",
+                                        "type": "Salary",
+                                        "sum_amnt": "8,75,567",
+                                        "styles": {
+                                            "color":"red",
+                                            "iconType":"error_outline"
+                                        },
+                                        "trnsInfrmn": [
+                                            {
+                                              "info_dtl_seqid": "2",
+                                              "info_smry_seqid": "2",
+										      "tsn_id": "101800002",
+                                              "finyr": "2018-19",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+										      "info_value": "15,45,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "color": {},
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ]
+                                            }
+                                        ]
+
+                                    },
+                                    {
+                                        "info_type": "sal_dep",
+                                        "info_gp_code": "sl",
+                                        "info_smry_seqid": "3",
+                                        "type": "Credit card expenditure",
+                                        "sum_amnt": "15,75,000",
+                                        "styles": {
+                                            "color":"red",
+                                            "iconType":"error_outline"
+                                        },
+                                        "trnsInfrmn": [
+                                            {
+                                              "info_dtl_seqid": "3",
+                                              "info_smry_seqid": "3",
+										      "tsn_id": "101800002",
+										      "finyr": "2018-19",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+										      "info_value": "15,45,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "color": "check",
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ]
+                                            }
+                                        ]
+
+                                    },
+                                    {
+                                        "info_type": "purc_dep",
+                                        "info_gp_code": "PL",
+                                        "info_smry_seqid": "4",
+                                        "type": "Purchase of Immovable Property",
+                                        "sum_amnt": "2,90,75,000",
+                                        "styles": {
+                                            "color":"lightgray",
+                                            "iconType":"radio_button_unchecked"
+                                        },
+                                        "trnsInfrmn": [
+                                            {
+                                              "info_dtl_seqid": "4",
+                                              "info_smry_seqid": "4",
+										      "tsn_id": "101800002",
+										      "finyr": "2018-19",
+										      "filer_name": "Cash deposits in current account (SFT003)",
+										      "info_value": "15,45,000",
+										      "info_typ_cd": "Cash-Deposite",
+                                              "color": "check",
+                                              "addnl_fld": [
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                },
+                                                {
+                                                    "key_Ref_typ_Id": "text",
+                                                    "key_ref_typ_desc": "text",
+                                                    "key_ref_val": "text",
+                                                    "edit_flag": "text"
+                                                }
+                                              ]
+                                            }
+                                        ]
+
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+                
+            }
+        ]
+        },
+        {
+        "prty_dtls": {
+			"pan": "AAACU2414K",
+			"name": "Non-Filing of Return"
+        },
+        "fy":[
+            {
+                "campInfoId":5,
+                "finYear":"F.Y. 2019-20",
+                "status":"Pending",
+                "color":"steelblue"
+            },
+            {
+                "campInfoId":6,
+                "finYear":"F.Y. 2018-19",
+                "status":"Submitted",
+                "color":"green"
+            }
+        ]
+        }
+    ]
+}

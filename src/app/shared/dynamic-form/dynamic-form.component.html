@@ -1,0 +1,60 @@
+<!-- <form>
+    <mat-grid-list [cols]="3" rowHeight="4:1">
+      <mat-grid-tile *ngFor="let input of formData">
+        <div [ngSwitch]="input.controlType">
+             <div fxLayout="column" appearance="fill" *ngSwitchCase="'text'">
+              <mat-label>{{input.controlName}}</mat-label>
+              <input matInput #input [placeholder]="input.placeholder">
+            </div>
+          <div fxLayout="column" *ngSwitchCase="'select'">
+            <label> {{input.controlName}}</label>
+              <select>
+                  <option value="">{{input.placeholder}}</option>
+                  <option *ngFor="let option of input.enum" [value]="option.value">{{option.optionName}}</option>
+              </select>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+</form> -->
+
+
+<form [formGroup]="optionCForm" novalidate>
+  <table class="table table-border">
+    <thead class="text-nowrap">
+      <th *ngFor="let item of formData" style="text-align: start;" >{{item.controlName}} <span class="ui-column-resizer"> </span></th>
+    </thead>
+    <tbody>
+      <ng-container formArrayName="tableRows" *ngFor="let group of getFormControls.controls ; let i=index">
+         <tr [formGroupName]="i">
+          <td *ngFor="let input of formData let j= index">
+           <div [ngSwitch]="input.controlType">
+            <mat-form-field *ngSwitchCase="'text'">
+              <mat-label>{{input.placeholder}}</mat-label>
+              <input matInput type="text" [pattern] = "input.validators.regx" formControlName = "{{input.controlName}}" autocomplete="off" required>
+            </mat-form-field>
+            <mat-form-field *ngSwitchCase="'numeric'">
+              <mat-label>{{input.placeholder}}</mat-label>
+              <input matInput type="number" required>
+            </mat-form-field>
+            <mat-form-field *ngSwitchCase="'Select'">
+              <mat-label>{{input.placeholder}}</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let option of input.enum" [value]="option.value">{{option.optionName}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          </td>
+          <td>
+           <a href="javascript:void(0)">
+            <mat-icon (click)="addRow()">add_circle_outline</mat-icon>
+            </a> 
+           <a href="javascript:void(0)" *ngIf="i > 0" >
+             <mat-icon (click)="deleteRow(i)">delete_forever</mat-icon>
+            </a> 
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</form>

@@ -1,0 +1,346 @@
+{
+  "ais_form": {
+    "form_creation_info": {
+      "creation_info": {
+        "created_by": "Insight",
+        "creation_date": "17/04/2020"
+      },
+      "form_details": {
+        "fin_yr": 2018,
+        "assmnt_yr":"2018-19",
+        "form_ver": 0.1
+      }
+    },
+    "ais_id": "AIS_123456",
+    "entity_dtls": {
+      "entity_type": "PAN",
+      "entity_name": "ABC Ltd.,",
+      "entity_id": "BLNPB4327T",
+      "entity_address": {
+        "free_address": "17,abc,Vaishali,Ghaziabad,UP,201010",
+        "full_address": {
+          "HouseNo": 17,
+          "BuildingName": "ABC",
+          "Locality": "Vaishali",
+          "CityOrTown": "Ghaziabad",
+          "State": "UP",
+          "PostalCode": 201010,
+          "CountryCode": 91
+        },
+        "source": "PAN Database"
+      },
+      "phone": {
+        "std_code": 18254,
+        "phone_no": 265385,
+        "source": "PAN Database"
+      },
+      "mobile": 9739431786,
+      "email": "ABC@gamil.com",
+      "email_source": "PAN Database",
+      "fathers_name": "XYZ",
+      "dob_or_date_of_Incorp": "17/02/1994"
+    },
+    "info_code_dtls": [ 
+       {
+        "info_code": "SFT-012",
+        "info_desc": "Purchase of Immovable Property",
+        "info_header_field": [
+          {
+            "label": "Property Address",
+            "label_id": "property_address",
+            "datatype": "string",
+            "displayseq": 1
+          },
+          {
+            "label": "Property Type",
+            "label_id": "property_type",
+            "datatype": "string",
+            "displayseq": 2
+          },
+          {
+            "label": "Transaction Date",
+            "label_id": "transaction_date",
+            "datatype": "string",
+            "displayseq": 3
+          },
+          {
+            "label": "Transaction Value",
+            "label_id": "transaction_value",
+            "datatype": "number",
+            "displayseq": 4
+          }
+        ],
+        "filer_wise_smry": [
+          {
+            "filer_smry_id": 201801,
+            "filer_name": "XYZBANK",
+            "filer_id": "BLNPB4328E.12345",
+            "count_of_trans": 2,
+            "smry_amnt": {
+              "desc": "Transaction Value",
+              "value": 8000000
+            },
+            "active_trans": [
+              {
+                "tsn_seqid": 1,
+                "tsn_id": 123456,
+                "orgl_rvsd_flag": "R",
+                "versn_num": 0.2,
+                "info_process_date": "01/04/2020",
+                "data": [
+                  {
+                    "label_id": "property_address",
+                    "value": "17,abc,Vaishali,Ghaziabad,UP,201010"
+                  },
+                  {
+                    "label_id": "property_type",
+                    "value": "R"
+                  },
+                  {
+                    "label_id": "transaction_date",
+                    "value": "18/03/2020"
+                  },
+                  {
+                    "label_id": "transaction_value",
+                    "value": 4000000
+                  }
+                ]
+              },
+              {
+                "tsn_seqid": 2,
+                "tsn_id": 123457,
+                "orgl_rvsd_flag": "R",
+                "versn_num": 0.2,
+                "info_process_date": "10/04/2020",
+                "data": [
+                  {
+                    "label_id": "property_address",
+                    "value": "18,abc,Vaishali,Ghaziabad,UP,201010"
+                  },
+                  {
+                    "label_id": "property_type",
+                    "value": "R"
+                  },
+                  {
+                    "label_id": "transaction_date",
+                    "value": "24/03/2020"
+                  },
+                  {
+                    "label_id": "transaction_value",
+                    "value": 4000000
+                  }
+                ]
+              }
+            ],
+            "inactive_trans": [
+              {
+                "tsn_seqid": 1,
+                "tsn_id": 123455,
+                "upl_dlt_flag": "U",
+                "reason_upd_dln": "Sale of Immovable Property",
+                "versn_num": 0.1,
+                "info_process_date": "22/03/2020",
+                "rfrnc_tsn": 123445,
+                "data": [
+                  {
+                    "label_id": "property_address",
+                    "value": "12,abc,Vaishali,Ghaziabad,UP,201010"
+                  },
+                  {
+                    "label_id": "property_type",
+                    "value": "R"
+                  },
+                  {
+                    "label_id": "transaction_date",
+                    "value": "21/03/2020"
+                  },
+                  {
+                    "label_id": "transaction_value",
+                    "value": 2000000
+                  }
+                ]
+              },
+              {
+                "tsn_seqid": 2,
+                "tsn_id": 123457,
+                "upl_dlt_flag": "U",
+                "reason_upd_dln": "Sale of Immovable Property",
+                "versn_num": 0.1,
+                "info_process_date": "22/03/2020",
+                "rfrnc_tsn": 123447,
+                "data": [
+                  {
+                    "label_id": "property_address",
+                    "value": "11,abc,Vaishali,Ghaziabad,UP,201010"
+                  },
+                  {
+                    "label_id": "property_type",
+                    "value": "R"
+                  },
+                  {
+                    "label_id": "transaction_date",
+                    "value": "21/03/2020"
+                  },
+                  {
+                    "label_id": "transaction_value",
+                    "value": 2000000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "info_code": "SFT-004",
+        "info_desc": "Cash deposits in an account other than current account",
+        "info_header_field": [
+          {
+            "label": "Account Number",
+            "label_id": "account_number",
+            "datatype": "number",
+            "displayseq": 1
+          },
+          {
+            "label": "Account Type",
+            "label_id": "account_type",
+            "datatype": "string",
+            "displayseq": 2
+          },
+          {
+            "label": "Account Relationship",
+            "label_id": "account_relationship",
+            "datatype": "string",
+            "displayseq": 3
+          },
+          {
+            "label": "Aggregate gross amount credited to the account in cash",
+            "label_id": "aggregate_gross_amount_credited_to_the_account_in_cash",
+            "datatype": "number",
+            "displayseq": 4
+          }
+        ],
+        "filer_wise_smry": [
+          {
+            "filer_smry_id": 201111,
+            "filer_name": "ICICI BANK",
+            "filer_id": "ICIC4328E.12345",
+            "count_of_trans": 2,
+            "smry_amnt": {
+              "desc": "Aggregate gross amount credited to the account in cash",
+              "value": 8000000
+            },
+            "active_trans": [
+              {
+                "tsn_seqid": 1,
+                "tsn_id": 233456,
+                "orgl_rvsd_flag": "R",
+                "versn_num": 0.2,
+                "info_process_date": "01/04/2019",
+                "data": [
+                  {
+                    "label_id": "account_number",
+                    "value": "100010001231121"
+                  },
+                  {
+                    "label_id": "account_type",
+                    "value": "Single account"
+                  },
+                  {
+                    "label_id": "account_relationship",
+                    "value": "Saving"
+                  },
+                  {
+                    "label_id": "aggregate_gross_amount_credited_to_the_account_in_cash",
+                    "value": 40000
+                  }
+                ]
+              },
+              {
+                "tsn_seqid": 2,
+                "tsn_id": 123227,
+                "orgl_rvsd_flag": "R",
+                "versn_num": 0.2,
+                "info_process_date": "10/04/2019",
+                "data": [
+                  {
+                    "label_id": "account_number",
+                    "value": "1000222221231121"
+                  },
+                  {
+                    "label_id": "account_type",
+                    "value": "Joint account"
+                  },
+                  {
+                    "label_id": "account_relationship",
+                    "value": "Saving"
+                  },
+                  {
+                    "label_id": "aggregate_gross_amount_credited_to_the_account_in_cash",
+                    "value": 45000
+                  }
+                ]
+              }
+            ],
+            "inactive_trans": [
+              {
+                "tsn_seqid": 1,
+                "tsn_id": 121155,
+                "upl_dlt_flag": "U",
+                "reason_upd_dln": "Updated information received from information source",
+                "versn_num": 0.1,
+                "info_process_date": "22/03/2019",
+                "rfrnc_tsn": 123245,
+                "data": [
+                  {
+                    "label_id": "account_number",
+                    "value": "100010001211121"
+                  },
+                  {
+                    "label_id": "account_type",
+                    "value": "Single account"
+                  },
+                  {
+                    "label_id": "account_relationship",
+                    "value": "Saving"
+                  },
+                  {
+                    "label_id": "aggregate_gross_amount_credited_to_the_account_in_cash",
+                    "value": 40000
+                  }
+                ]
+              },
+              {
+                "tsn_seqid": 2,
+                "tsn_id": 123257,
+                "upl_dlt_flag": "U",
+                "reason_upd_dln": "Updated information received from information source",
+                "versn_num": 0.1,
+                "info_process_date": "22/03/2019",
+                "rfrnc_tsn": 123247,
+                "data": [
+                  {
+                    "label_id": "account_number",
+                    "value": "100010001111121"
+                  },
+                  {
+                    "label_id": "account_type",
+                    "value": "Single account"
+                  },
+                  {
+                    "label_id": "account_relationship",
+                    "value": "Saving"
+                  },
+                  {
+                    "label_id": "aggregate_gross_amount_credited_to_the_account_in_cash",
+                    "value": 45500
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

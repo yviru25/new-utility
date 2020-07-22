@@ -1,0 +1,23 @@
+<div class="header">
+  <mat-toolbar color="default">
+    <mat-toolbar-row>
+      <span>
+        <img src="assets/images/portal-logo.png" alt="">
+      </span>
+      <span class="example-spacer"></span>
+      <img src="assets/images/insight-logo.png" alt="">
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div fxLayout="row" class="nav" style="padding: 10px;">
+    <div class="chooser"> 
+      <input type="file" id="file" style="display: none" #uploader (change) = "AisfileImport($event)" />
+      <a href="javascript:void(0)" (click)="uploader.click()" class="navOption"> Open </a>
+    </div>
+    <div class="chooser">
+      <a href="javascript:void(0)" class="navOption">Save</a>
+    </div>
+    <div class="chooser">
+      <a href="javascript:void(0)" (click)="exportFeedback()" class="navOption">Export</a>
+    </div>
+  </div><hr>
+</div>

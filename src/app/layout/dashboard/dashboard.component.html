@@ -1,0 +1,63 @@
+<!-- <mat-grid-list cols="3" rowHeight="100px" [gutterSize]="'15px'">
+    <mat-grid-tile (click)="importJsonFile(tile.moduleId)" *ngFor="let tile of gridTileList"  
+    [colspan]="tile.cols" 
+    [rowspan]="tile.rows" 
+    >
+    <div fxLayout="column" fxLayoutAlign="start center">
+        <img [src]="tile.icon" />
+        <p>{{tile.moduleTitle}}</p> 
+    </div>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+  <mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Overview">
+      <mat-list>
+        <mat-list-item>
+          <p>
+            The Utility has been designed to enable taxpayers/intermediaries to view the 
+            Annual Information Statement (AIS)/e-Proceeding and provide feedback/response.
+          </p>
+        </mat-list-item>
+        
+        <h2 mat-subheader  style="color: black;">General Instructions</h2>
+        <mat-list-item>
+          <p>1. Kindly import the file into utility downloaded from Compliance portal only. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>2. A calendar is provided at each date field for selecting the date. Date should be in the format DD-MM-YYYY. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>3. All greyed out filed are either auto-filled or non-editable. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>4. It is a good practice to save your work frequently. Please use Save option for the same. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>5. While entering the information in relevant fields/tables provided in the utility, user can use following facility: </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>6. Kindly make sure there is no space before and after the text/information during copying such 
+            data from any other information source. <br> Also, kindly check that the data is not pasted in exponential format. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>7. All numeric data to be rounded off as no decimal digits are allowed in the utility. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>8. Click on Export link to generate the file and save on desired path. </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>9. The generated/exported file should be uploaded on Compliance Portal ( <a href="https://compliance.insight.gov.in" target="_blank">https://compliance.insight.gov.in</a> ) </p>
+        </mat-list-item>
+        <mat-list-item>
+          <p>10. Once the file is submitted, an acknowledgement number will be generated for your future reference </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+    <mat-tab label="">
+
+    </mat-tab>
+    <mat-tab label="">
+
+    </mat-tab>
+  </mat-tab-group>

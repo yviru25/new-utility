@@ -1,0 +1,40 @@
+<h2>
+  <div fxFlex="100" fxLayout="row">
+      <div fxFlex="50" fxLayoutAlign="start center">
+          <div fxLayout="row">
+              <img src="assets/images/register.png" /> 
+              <span>Feedback</span>
+          </div>
+      </div>
+      <div fxFlex="50" fxLayoutAlign="end center">
+          <div fxLayout="row">
+              <a mat-dialog-close href="javascript:void(0)" style="color: black;">
+                  <span class="material-icons">
+                      close
+                  </span>
+              </a>
+          </div>
+      </div>
+  </div>
+</h2><hr>
+<mat-dialog-content class="mat-typography">
+  <section class="model-body" style="background: #ececec;" fxLayout="row">
+    <div *ngFor="let c of data.checkedInfoList" fxLayout="column" style="border-right: 1px solid #cccc;padding: 10px;">
+      <span *ngFor="let m of data.metaDataInfoField">
+        <h4>{{m.label}}</h4>
+        <h5>{{c[m.label_id]}}</h5>
+      </span><hr>
+    </div>
+  </section><br><br>
+  <section fxLayout="row">
+    <mat-radio-group aria-label="Select an option" [(ngModel)]="optionChoosen">
+      <mat-radio-button value="A" style="padding: 7px;">Information is correct</mat-radio-button>
+      <mat-radio-button value="E" style="padding: 7px;">Information is denied</mat-radio-button>
+    </mat-radio-group>
+  </section>
+  <!-- <pre>Option Choosen:- {{optionChoosen}}</pre> -->
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+  <button [disabled]="optionChoosen === undefined" (click)="submitBulkResponse()" mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>Save</button>
+</mat-dialog-actions>

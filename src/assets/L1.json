@@ -1,0 +1,131 @@
+{
+	"ais_form": {
+		"form_creation_info": {
+			"creation_info": {
+				"created_by": "Project Insight,ITD",
+				"creation_date": "08-04-2020"
+			},
+			"form_details": {
+				"fin_yr": "2018-19",
+				"assmnt_yr": "2019-20",
+				"form_ver": "1.0"
+			}
+		},
+		"ais_id": "RGBPD8448V.01",
+		"entity_id": "RGBPD8448V",
+		"entity_type": "Individual",
+		"info_dtls": {
+			"info_code": "teSFT-012xt",
+			"info_desc": "Purchase of immovable property",
+			"smmry_seqid": "l11",
+			"filer_dtls": {
+				"filer_name": "HDFC",
+				"filer_id": "HDFC0946758",
+				"filer_desc": "Amount is Credited By HDFC"
+			},
+			"information_header_field": [
+				{
+					"label": "Section",
+					"label_id": "section",
+					"datatype": "string",
+					"displayseq": "1"
+				},
+				{
+					"label": "Date of Payment",
+					"label_id": "date_of_payment",
+					"datatype": "string",
+					"displayseq": "2"
+				},
+				{
+					"label": "Amount paid/ Credited",
+					"label_id": "amount_paid_credited",
+					"datatype": "string",
+					"displayseq": "3"
+				},
+				{
+					"label": "TDS Deducted",
+					"label_id": "tds_deducted",
+					"datatype": "string",
+					"displayseq": "4"
+				},
+				{
+					"label": "TDS Deposited",
+					"label_id": "tds_deposited",
+					"datatype": "string",
+					"displayseq": "4"
+				}
+			],
+			"active_trans": [
+				{
+					"tsn_seqid": "16",
+					"tsn_id": "117",
+					"orgl_rvsd_flag": "N",
+					"versn_num": "10.4",
+					"info_process_date": "16/04/2020",
+					"data": [
+						{
+							"label_id": "section",
+							"value": "192"
+						},
+						{
+							"label_id": "date_of_payment",
+							"value": "10/05/2019"
+						},
+						{
+							"label_id": "amount_paid_credited",
+							"value": "3,00,000"
+						},
+						{
+							"label_id": "tds_deducted",
+							"value": "5,000"
+						},
+						{
+							"label_id": "tds_deposited",
+							"value": "5,000"
+						}
+					]
+				}
+			],
+			"inactive_trans": [
+				{
+					"tsn_seqid": "text",
+					"tsn_id": "text",
+					"upl_dlt_flag": "text",
+					"reason_upd_dln": "text",
+					"versn_num": "text",
+					"info_process_date": "text",
+					"rfrnc_tsn": "text",
+					"data": [
+						{
+							"label_id": "text",
+							"value": "text"
+						},
+						{
+							"label_id": "text",
+							"value": "text"
+						}
+					]
+				},
+				{
+					"tsn_seqid": "text",
+					"tsn_id": "text",
+					"upl_dlt_flag": "text",
+					"reason_upd_dln": "text",
+					"versn_num": "text",
+					"info_process_date": "text",
+					"rfrnc_tsn": "text",
+					"data": [
+						{
+							"label_id": "text",
+							"value": "text"
+						},
+						{
+							"label_id": "text",
+							"value": "text"
+						}
+					]
+				}
+			]
+		}
+	}
+}

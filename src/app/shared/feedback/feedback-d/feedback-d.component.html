@@ -1,0 +1,21 @@
+<div class="mat-table" *ngIf="duplicateDataList.length >= 1">
+  <section matSort class="mat-header-row">
+    <span class="mat-header-cell">
+      <mat-checkbox></mat-checkbox>
+    </span>
+    <span class="mat-header-cell" *ngFor="let l1hdr of l1header">
+      {{l1hdr.label}}
+    </span>
+  </section>
+  <section class="mat-row" *ngFor="let l1Item of duplicateDataList let i=index">
+    <span class="mat-cell">
+      <mat-checkbox></mat-checkbox>
+    </span>
+    <span class="mat-cell" *ngFor="let l1h of l1header">
+      {{l1Item[l1h.label_id]}}
+    </span>
+  </section>
+</div>
+<div class="notduplicate" *ngIf="duplicateDataList.length === 0">
+   <span style="color: crimson;">No Duplicate Data Found</span>
+</div>

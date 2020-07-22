@@ -1,0 +1,153 @@
+{
+	"ais_feedbck": {
+		"ais_id": "RGBPD8448V.01",
+		"revsn_id":"1",
+		"cntrlNo":"1",
+		"feedback": [
+			{
+				"smmry_id": "1.0",
+				"tsn_id": "TSN0001",
+				"feedback_lvl": "L1",
+				"response": {
+					"optn_chosen": "A"
+				}
+			},
+			{
+				"smmry_id": "1.0",
+				"tsn_id": "TSN0002",
+				"feedback_lvl": "L1",
+				"feedback": {
+					"optn_chosen": "B",
+					"response_data": {
+						"row": [
+							{
+								"col": [
+									{
+										"key": "date_of_payment",
+										"value": "18/05/2020"
+									},
+									{
+										"key": "amount_paid_credited",
+										"value": "5000"
+									},
+									{
+										"key": "tds_deducted",
+										"value": "5000"
+									},
+									{
+										"key": "tds_deposited",
+										"value": "5000"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"smmry_id": "1.0",
+				"tsn_id": "TSN0003",
+				"feedback_lvl": "L1",
+				"feedback": {
+					"optn_chosen": "C",
+					"response_data": {
+						"row": [
+							{
+								"col": [
+									{
+										"key": "self_other_person",
+										"value": "Self"
+									},
+									{
+										"key": "pan",
+										"value": "AAACU2414K"
+									},
+									{
+										"key": "pan_name",
+										"value": "AXIS Bank"
+									},
+									{
+										"key": "relationship",
+										"value": "Son"
+									},
+									{
+										"key": "fin_year",
+										"value": "2018-19"
+									},
+									{
+										"key": "amount",
+										"value": "2000000"
+									}
+								]
+							},
+							{
+								"col": [
+									{
+										"key": "self_other_person",
+										"value": "Other"
+									},
+									{
+										"key": "pan",
+										"value": "AAACU2414K"
+									},
+									{
+										"key": "pan_name",
+										"value": "AXIS Bank"
+									},
+									{
+										"key": "relationship",
+										"value": "Son"
+									},
+									{
+										"key": "fin_year",
+										"value": "2018-19"
+									},
+									{
+										"key": "amount",
+										"value": "2000000"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"smmry_id": "1.0",
+				"tsn_id": "TSN0004",
+				"feedback_lvl": "L1",
+				"feedback": {
+					"optn_chosen": "D",
+					"response_data": {
+						"row": [
+							{
+								"col": [
+									{
+										"key": "tsn_id",
+										"value": "TSN00001"
+									}
+								]
+							},
+							{
+								"col": [
+									{
+										"key": "tsn_id",
+										"value": "TSN00002"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"smmry_id": "1.0",
+				"tsn_id": "TSN0001",
+				"feedback_lvl": "L1",
+				"response": {
+					"optn_chosen": "E"
+				}
+			}
+		]
+	}
+}

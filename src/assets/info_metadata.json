@@ -1,0 +1,125 @@
+{
+	"info_data_metadata": [
+		{
+		"info_code": "TDS-192",
+		"desc": "Propert",
+		"field": [
+			{
+				"seq_id": "1",
+				"data_type": "text",
+				"label_id": "tsn_id",
+				"label": "TSN Id",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}	
+			},
+			{
+				"seq_id": "2",
+				"data_type": "date",
+				"label_id": "date_of_payment",
+				"label": "Date Of Payment",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}	
+			},
+			{
+				"seq_id": "2",
+				"data_type": "numeric",
+				"label_id": "amount_paid_credited",
+				"label": "Amount Paid Credited",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			},
+			{
+				"seq_id": "3",
+				"data_type": "numeric",
+				"label_id": "tds_deducted",
+				"label": "TDS Deducted",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			},
+			{
+				"seq_id": "4",
+				"data_type": "numeric",
+				"label_id": "tds_deposited",
+				"label": "TDS Deposited",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			}
+		]
+	},
+	{
+		"info_code": "SFT012",
+		"desc": "Propert",
+		"field": [
+			{
+				"seq_id": "1",
+				"data_type": "date",
+				"label_id": "date_of_payment",
+				"label": "Date Of Payment",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+				
+			},
+			{
+				"seq_id": "2",
+				"data_type": "numeric",
+				"label_id": "amount_paid_credited",
+				"label": "text",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			},
+			{
+				"seq_id": "3",
+				"data_type": "numeric",
+				"label_id": "tds_deducted",
+				"label": "text",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			},
+			{
+				"seq_id": "4",
+				"data_type": "numeric",
+				"label_id": "tds_deposited",
+				"label": "text",
+				"validators": {
+					"required": "Y",
+					"minlength":"",
+					"maxlength":"",
+					"regx": ""
+				}
+			}
+		]
+	}
+  ]
+}

@@ -1,0 +1,153 @@
+{
+	"ais_options": {
+		"feedbackoption": [
+			{
+				"opt_code": "A",
+				"opt_desc": "Information is correct",
+				"txt_bfr_cnfrm": "text",
+				"txt_aftr_cnfrm": "text",
+				"multi_row_resp_rqrd": "N",
+				"info_edit_reqrd": "N",
+				"edit_properties":[]		
+			},
+			{
+				"opt_code": "B",
+				"opt_desc": "Information is not fully correct",
+				"txt_bfr_cnfrm": "text",
+				"txt_aftr_cnfrm": "text",
+				"multi_row_resp_rqrd": "N",
+				"info_edit_reqrd": "Y",
+				"edit_properties":[]
+			},
+			{
+				"opt_code": "C",
+				"opt_desc": "Information relates to other Person/Year",
+				"txt_bfr_cnfrm": "text",
+				"txt_aftr_cnfrm": "text",
+				"multi_row_resp_rqrd": "Y",
+				"info_edit_reqrd": "N",
+				"edit_properties": [
+					{
+						"seq": "1",
+						"id": "1",
+						"controlName": "Self/Other person",
+						"data_type": "String",
+						"placeholder": "Select",
+						"controlType": "Select",
+						"enum": [
+							{
+								"optionName": "Self",
+								"value": "self"
+							},
+							{
+								"optionName": "Other",
+								"value": "other"
+							}
+						],
+						"validators": {
+							"required": true
+						}
+					},
+					{
+						"seq": "2",
+						"id": "2",
+						"controlName": "Pan",
+						"data_type": "String",
+						"placeholder": "Enter Pan",
+						"controlType": "text",
+						"validators": {
+							"required": true,
+							"regex": "[A-Z]{5}[0-9]{4}[A-Z]{1}"
+						}
+					},
+					{
+						"seq": "2",
+						"id": "2",
+						"controlName": "Pan Name",
+						"data_type": "String",
+						"placeholder": "Enter Pan Name",
+						"controlType": "text",
+						"validators": {
+							"required": true,
+							"regex": ""
+						}
+					},
+					{
+						"seq": "2",
+						"id": "2",
+						"controlName": "Relationship",
+						"data_type": "String",
+						"placeholder": "Select Relationship",
+						"controlType": "Select",
+						"enum": [
+							{
+								"optionName": "Son",
+								"value": "son"
+							},
+							{
+								"optionName": "Father",
+								"value": "father"
+							},
+							{
+								"optionName": "Mother",
+								"value": "mother"
+							}
+						],
+						"validators": {
+							"required": true
+						}
+					},
+					{
+						"seq": "2",
+						"id": "2",
+						"controlName": "F.Y",
+						"data_type": "String",
+						"placeholder": "Select F.Y",
+						"controlType": "Select",
+						"enum": [
+							{
+								"optionName": "2018-19",
+								"value": "2018"
+							},
+							{
+								"optionName": "2019-20",
+								"value": "2019"
+							}
+						],
+						"validators": {
+							"required": true
+						}
+					},
+					{
+						"seq": "2",
+						"id": "2",
+						"controlName": "Amount",
+						"data_type": "number",
+						"placeholder": "Enter Amount",
+						"controlType": "numeric",
+						"validators": {
+							"required": true,
+							"regex": "Pattern of Amount"
+						}
+					}
+				]
+			},	{
+				"opt_code": "D",
+				"opt_desc": "Information is duplicate/ included in other displayed information",
+				"txt_bfr_cnfrm": "text",
+				"txt_aftr_cnfrm": "text",
+				"multi_row_resp_rqrd": "text",
+				"info_edit_reqrd": "text",
+				"edit_properties": []
+			},	{
+				"opt_code": "E",
+				"opt_desc": "Information is denied",
+				"txt_bfr_cnfrm": "text",
+				"txt_aftr_cnfrm": "text",
+				"multi_row_resp_rqrd": "text",
+				"info_edit_reqrd": "text",
+				"edit_properties": []
+			}
+		]
+	}
+}

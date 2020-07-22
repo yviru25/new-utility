@@ -1,0 +1,491 @@
+{
+	"ais_form": {
+		"form_creation_info": {
+			"creation_info": {
+				"created_by": "Project Insight,ITD",
+				"creation_date": "08-04-2020"
+			},
+			"form_details": {
+				"fin_yr": "2018-19",
+				"assmnt_yr": "2019-20",
+				"form_ver": "1.0"
+			}
+		},
+		"ais_id": "RGBPD8448V.01",
+		"entity_dtls": {
+			"entity_id": "RGBPD8448V",
+			"entity_type": "Individual",
+			"entity_particulars": [
+				{
+					"particular_type": "Name",
+					"value": "SADASIVAN NAIR",
+					"source": "PAN database",
+					"date": "06-04-2019"
+				},
+				{
+					"particular_type": "Address",
+					"value": "28/16 UpkarBhawan, RAMNAGAR COLONY,Delhi",
+					"source": "PAN database",
+					"date": "06-04-2019"
+				},
+				{
+					"particular_type": "Mobile",
+					"value": "9999999112",
+					"source": "PAN database",
+					"date": "06-04-2019"
+				},	
+				{
+					"particular_type": "Email",
+					"value": "SADASIVAN.NAIR@gmail.com",
+					"source": "PAN database",
+					"date": "06-04-2019"
+				}
+			],
+			"fathers_name": "Ram Nair",
+			"dob_or_date_of_Incorp": "17-04-1976"
+		},
+		"info_dtls": [
+			{
+				"info_code": "SFT-012",
+				"part_type": "B",
+				"amount_sum":"80,000,00",
+				"info_desc": "Purchase of immovable property",
+				"trans_header_field": [
+					{
+						"label": "Property Address",
+						"label_id": "property_address",
+						"datatype": "string",
+						"displayseq": "1"
+					},
+					{
+						"label": "Property Type",
+						"label_id": "property_type",
+						"datatype": "string",
+						"displayseq": "2"
+					},
+					{
+						"label": "Transaction Date",
+						"label_id": "transaction_date",
+						"datatype": "string",
+						"displayseq": "3"
+					},
+					{
+						"label": "Transaction Value",
+						"label_id": "transaction_value",
+						"datatype": "string",
+						"displayseq": "4"
+					}
+				],
+				"l2_header_field": [
+					{
+						"label": "Info Code",
+						"label_id": "info_code",
+						"datatype": "string",
+						"displayseq": "1"
+					},
+					{
+						"label": "Info Description",
+						"label_id": "info_desc",
+						"datatype": "string",
+						"displayseq": "2"
+					},
+					{
+						"label": "Count",
+						"label_id": "count_of_trans",
+						"datatype": "string",
+						"displayseq": "3"
+					},
+					{
+						"label": "Total Amount (Rs.)",
+						"label_id": "smry_amnt",
+						"datatype": "string",
+						"displayseq": "4"
+					},
+					{
+						"label": "Amount Description",
+						"label_id": "smry_desc",
+						"datatype": "string",
+						"displayseq": "4"
+					}
+				],
+				"info_smry": [
+					{
+						"smry_id": "1",
+						"filer_dtls": {
+							"filer_name": "Sub-Registrar 1",
+							"filer_id": "ID.1",
+							"filer_desc": "Filer"
+						},
+						"count_of_trans": "2",
+						"smry_amnt": {
+							"desc": "Transaction Value",
+							"value": "80,00,000"
+						},
+						"active_trans": [
+							{
+								"tsn_seqid": "10",
+								"tsn_id": "111",
+								"orgl_rvsd_flag": "N",
+								"versn_num": "10.1",
+								"info_process_date": "18/04/2020",
+								"rfrnc_tsn": "5466372",
+								"data": [
+									{
+									  "label_id": "property_address",
+									  "value": "17,abc,Vaishali,Ghaziabad,UP,201010"
+									},
+									{
+									  "label_id": "property_type",
+									  "value": "R"
+									},
+									{
+									  "label_id": "transaction_date",
+									  "value": "18/03/2020"
+									},
+									{
+									  "label_id": "transaction_value",
+									  "value": 4000000
+									}
+								  ]
+							},
+							{
+								"tsn_seqid": "11",
+								"tsn_id": "112",
+								"orgl_rvsd_flag": "N",
+								"versn_num": "10.1",
+								"info_process_date": "19/04/2020",
+								"rfrnc_tsn": "7568393",
+								"data": [
+									{
+									  "label_id": "property_address",
+									  "value": "18,abc,Vaishali,Ghaziabad,UP,201010"
+									},
+									{
+									  "label_id": "property_type",
+									  "value": "P"
+									},
+									{
+									  "label_id": "transaction_date",
+									  "value": "01/03/2020"
+									},
+									{
+									  "label_id": "transaction_value",
+									  "value": 400000
+									}
+								  ]
+							}
+						],
+						"inactive_trans": [
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"upl_dlt_flag": "text",
+								"reason_upd_dln": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"rfrnc_tsn": "text",
+								"data": [
+									{
+									  "label_id": "property_address",
+									  "value": "18,abc,Vaishali,Ghaziabad,UP,201010"
+									},
+									{
+									  "label_id": "property_type",
+									  "value": "P"
+									},
+									{
+									  "label_id": "transaction_date",
+									  "value": "01/03/2020"
+									},
+									{
+									  "label_id": "transaction_value",
+									  "value": 400000
+									}
+								  ]
+							}
+						]
+					}
+				]
+			},
+			{
+				"info_code": "SFT-004",
+				"part_type": "B",
+				"amount_sum":"85,000,00",
+				"info_desc": "Cash deposits in an account other than current account",
+				"trans_header_field": [
+					{
+						"label": "Property Address",
+						"label_id": "property_address",
+						"datatype": "string",
+						"displayseq": "1"
+					},
+					{
+						"label": "Property Type",
+						"label_id": "property_type",
+						"datatype": "string",
+						"displayseq": "2"
+					},
+					{
+						"label": "Transaction Date",
+						"label_id": "transaction_date",
+						"datatype": "string",
+						"displayseq": "3"
+					},
+					{
+						"label": "Transaction Value",
+						"label_id": "transaction_value",
+						"datatype": "string",
+						"displayseq": "4"
+					}
+				],
+				"info_smry": [
+					{
+						"smry_id": "3",
+						"filer_dtls": {
+							"filer_name": "Sub-Registrar 1",
+							"filer_id": "ID.1",
+							"filer_desc": "Filer"
+						},
+						"count_of_trans": "1",
+						"smry_amnt": {
+							"desc": "Transaction Value",
+							"value": "49,00,000"
+						},
+						"active_trans": [
+							{
+								"tsn_seqid": "12",
+								"tsn_id": "114",
+								"orgl_rvsd_flag": "N",
+								"versn_num": "10.1",
+								"info_process_date": "11/08/2020",
+								"data": [
+									{
+									  "label_id": "property_address",
+									  "value": "19,abc,Vaishali,Ghaziabad,UP,201010"
+									},
+									{
+									  "label_id": "property_type",
+									  "value": "R"
+									},
+									{
+									  "label_id": "transaction_date",
+									  "value": "02/03/2020"
+									},
+									{
+									  "label_id": "transaction_value",
+									  "value": 4900000
+									}
+								  ]
+							}
+						],
+						"inactive_trans": [
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"upl_dlt_flag": "text",
+								"reason_upd_dln": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"rfrnc_tsn": "text",
+								"data": [
+									{
+										"label_id": "text",
+										"value": "text"
+									},
+									{
+										"label_id": "text",
+										"value": "text"
+									}
+								]
+							},
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"upl_dlt_flag": "text",
+								"reason_upd_dln": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"rfrnc_tsn": "text",
+								"data": [
+									{
+										"label_id": "prop_addr",
+										"value": "ABC"
+									},
+									{
+										"label_id": "prop_tran",
+										"value": "40,00,000"
+									},{
+										"label_id": "text",
+										"value": "text"
+									},{
+										"label_id": "text",
+										"value": "text"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"info_code": "TDS-192",
+				"part_type": "A",
+				"amount_sum":"56,000,00",
+				"info_desc": "Salary Received (TDS Form 24Q, Section 192)",
+				"trans_header_field": [
+					{
+						"label": "Section",
+						"label_id": "section",
+						"datatype": "string",
+						"displayseq": "1"
+					},
+					{
+						"label": "Date of Payment",
+						"label_id": "date_of_payment",
+						"datatype": "string",
+						"displayseq": "2"
+					},
+					{
+						"label": "Amount paid/ Credited",
+						"label_id": "amount_paid_credited",
+						"datatype": "string",
+						"displayseq": "3"
+					},
+					{
+						"label": "TDS Deducted",
+						"label_id": "tds_deducted",
+						"datatype": "string",
+						"displayseq": "4"
+					},
+					{
+						"label": "TDS Deposited",
+						"label_id": "tds_deposited",
+						"datatype": "string",
+						"displayseq": "4"
+					}
+				],
+				"info_smry": [
+					{
+						"smry_id": "4",
+						"filer_dtls": {
+							"filer_name": "Sub-Registrar 1",
+							"filer_id": "ID.1",
+							"filer_desc": "Filer"
+						},
+						"count_of_trans": "2",
+						"smry_amnt": {
+							"desc": "Transaction Value",
+							"value": "80,00,000"
+						},
+						"active_trans": [
+							{
+								"tsn_seqid": "16",
+								"tsn_id": "117",
+								"orgl_rvsd_flag": "N",
+								"versn_num": "10.4",
+								"info_process_date": "16/04/2020",
+								"data": [
+									{
+										"label_id": "section",
+										"value": "192"
+									},
+									{
+										"label_id": "date_of_payment",
+										"value": "10/05/2019"
+									},
+									{
+										"label_id": "amount_paid_credited",
+										"value": "3,00,000"
+									},
+									{
+										"label_id": "tds_deducted",
+										"value": "5,000"
+									},
+									{
+										"label_id": "tds_deposited",
+										"value": "5,000"
+									}
+								]
+							},
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"orgl_rvsd_flag": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"data": [
+									{
+										"label_id": "section",
+										"value": "192"
+									},
+									{
+										"label_id": "date_of_payment",
+										"value": "05/06/2019"
+									},
+									{
+										"label_id": "amount_paid_credited",
+										"value": "6,00,000"
+									},
+									{
+										"label_id": "tds_deducted",
+										"value": "6,000"
+									},
+									{
+										"label_id": "tds_deposited",
+										"value": "6,000"
+									}
+								]
+							}
+						],
+						"inactive_trans": [
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"upl_dlt_flag": "text",
+								"reason_upd_dln": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"rfrnc_tsn": "text",
+								"data": [
+									{
+										"label_id": "text",
+										"value": "text"
+									},
+									{
+										"label_id": "text",
+										"value": "text"
+									}
+								]
+							},
+							{
+								"tsn_seqid": "text",
+								"tsn_id": "text",
+								"upl_dlt_flag": "text",
+								"reason_upd_dln": "text",
+								"versn_num": "text",
+								"info_process_date": "text",
+								"rfrnc_tsn": "text",
+								"data": [
+									{
+										"label_id": "prop_addr",
+										"value": "ABC"
+									},
+									{
+										"label_id": "prop_tran",
+										"value": "40,00,000"
+									},{
+										"label_id": "text",
+										"value": "text"
+									},{
+										"label_id": "text",
+										"value": "text"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

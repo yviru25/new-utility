@@ -1,0 +1,29 @@
+<div class="container-b">
+  <form class="example-form" novalidate>
+    <div *ngFor="let m of metaInfo" >
+        <div *ngFor="let s of selectedDataList" [ngSwitch]="m.data_type">
+            <div fxFlex="100" fxLayout="row">
+              <div fxFlex="50">
+                  <label for="" style="color: #a2a1a1;">{{m.label}}</label>
+              </div>
+              <div fxFlex="50">
+                <mat-form-field *ngSwitchCase="'numeric'">
+                  <!-- <mat-label>{{m.label}}</mat-label> -->
+                  <!-- <span matPrefix>₹&nbsp;</span> -->
+                  <input type="text" numbersOnly matInput [value]="s[m.label_id]" autocomplete="off">
+                  
+                  <!-- <span matPrefix>{{}}</span> -->
+                </mat-form-field>
+                <mat-form-field *ngSwitchCase="'date'">
+                  <!-- <input matInput type="date" [value]="date" /> -->
+                 <!--  <mat-label>{{m.label}}</mat-label> -->
+                  <input matInput [matDatepicker]="picker1" [value]="date" autocomplete="off" >
+                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                  <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+              </div>
+            </div>
+        </div>
+    </div>
+  </form>
+</div>
