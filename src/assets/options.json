@@ -31,6 +31,7 @@
 						"seq": "1",
 						"id": "1",
 						"controlName": "Self/Other person",
+						"labelId":"self_other_person",
 						"data_type": "String",
 						"placeholder": "Select",
 						"controlType": "Select",
@@ -45,13 +46,13 @@
 							}
 						],
 						"validators": {
-							"required": true
 						}
 					},
 					{
 						"seq": "2",
 						"id": "2",
 						"controlName": "Pan",
+						"labelId":"pan",
 						"data_type": "String",
 						"placeholder": "Enter Pan",
 						"controlType": "text",
@@ -64,18 +65,19 @@
 						"seq": "2",
 						"id": "2",
 						"controlName": "Pan Name",
+						"labelId":"pan_name",
 						"data_type": "String",
 						"placeholder": "Enter Pan Name",
 						"controlType": "text",
 						"validators": {
-							"required": true,
-							"regex": ""
+							"required": true
 						}
 					},
 					{
 						"seq": "2",
 						"id": "2",
 						"controlName": "Relationship",
+						"labelId":"relationship",
 						"data_type": "String",
 						"placeholder": "Select Relationship",
 						"controlType": "Select",
@@ -101,6 +103,7 @@
 						"seq": "2",
 						"id": "2",
 						"controlName": "F.Y",
+						"labelId":"fin_year",
 						"data_type": "String",
 						"placeholder": "Select F.Y",
 						"controlType": "Select",
@@ -122,12 +125,12 @@
 						"seq": "2",
 						"id": "2",
 						"controlName": "Amount",
+						"labelId":"amount",
 						"data_type": "number",
 						"placeholder": "Enter Amount",
 						"controlType": "numeric",
 						"validators": {
-							"required": true,
-							"regex": "Pattern of Amount"
+							"required": true
 						}
 					}
 				]

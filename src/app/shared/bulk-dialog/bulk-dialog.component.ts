@@ -14,8 +14,9 @@ export class BulkDialogComponent implements OnInit {
   optionChoosen: string;
   dataList = [];
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, private service: SharedServices, private dbService: NgxIndexedDBService) {
+    console.log(data);
     this.dataList = data.checkedInfoList;
-    console.log(this.dataList);
+    // console.log(this.dataList);
   }
 
   ngOnInit() {

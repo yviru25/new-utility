@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
 import { NgxIndexedDBModule, DBConfig } from 'ngx-indexed-db';
+
 
 const dbConfig: DBConfig  = {
   name: 'AIS_Utility',
@@ -14,12 +14,14 @@ const dbConfig: DBConfig  = {
   objectStoresMeta: [
     {
     store: 'feedback_response',
-    storeConfig: { keyPath: 'id', autoIncrement: true },
+    storeConfig: { keyPath: 'feedbackId', autoIncrement: true },
     storeSchema: [
-        { name: 'smmry_id', keypath: 'smmry_id', options: { unique: true } },
-        { name: 'tsn_id', keypath: 'tsn_id', options: { unique: true } },
-        { name: 'feedback_lvl', keypath: 'feedback_lvl', options: { unique: false } },
-        { name: 'response', keypath: 'response', options: { unique: false } }
+        { name: 'type', keypath: 'type', options: { unique: false } },
+        { name: 'infoCode', keypath: 'infoCode', options: { unique: false } },
+        { name: 'infoCategory', keypath: 'infoCategory', options: { unique: false } },
+        { name: 'infoSource', keypath: 'infoSource', options: { unique: false } },
+        { name: 'createdDate', keypath: 'createdDate', options: { unique: false } },
+        { name: 'jsonResponse', keypath: 'jsonResponse', options: { unique: false } }
     ]
   },
   {
@@ -39,6 +41,7 @@ const dbConfig: DBConfig  = {
   },
 ]
 };
+
 @NgModule({
   declarations: [
     AppComponent
@@ -46,14 +49,14 @@ const dbConfig: DBConfig  = {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    HttpClientModule,
     SharedModule,
+    HttpClientModule,
+    AppRoutingModule,
     NgxIndexedDBModule.forRoot(dbConfig)
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ ],
+  entryComponents: [],
 })
 
 export class AppModule {

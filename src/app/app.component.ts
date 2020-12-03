@@ -1,24 +1,30 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Inject } from '@angular/core';
 import { NgxIndexedDBService, ObjectStoreMeta } from 'ngx-indexed-db';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: []
 })
 export class AppComponent implements OnInit {
 
-  constructor(private dbService: NgxIndexedDBService) {
+  constructor(private http: HttpClient, private dbService: NgxIndexedDBService) {
+
   }
-  ngOnInit(): void {
+
+  ngOnInit() {
     const storeSchema: ObjectStoreMeta  = {
       store: 'feedback_response',
-      storeConfig: { keyPath: 'id', autoIncrement: true },
+      storeConfig: { keyPath: 'feedbackId', autoIncrement: true },
       storeSchema: [
-        { name: 'smmry_id', keypath: 'smmry_id', options: { unique: true } },
-        { name: 'tsn_id', keypath: 'tsn_id', options: { unique: true } },
-        { name: 'feedback_lvl', keypath: 'feedback_lvl', options: { unique: false } },
-        { name: 'response', keypath: 'response', options: { unique: false } }
+        { name: 'type', keypath: 'type', options: { unique: false } },
+        { name: 'infoCode', keypath: 'infoCode', options: { unique: false } },
+        { name: 'infoCategory', keypath: 'infoCategory', options: { unique: false } },
+        { name: 'infoSource', keypath: 'infoSource', options: { unique: false } },
+        { name: 'createdDate', keypath: 'createdDate', options: { unique: false } },
+        { name: 'jsonResponse', keypath: 'jsonResponse', options: { unique: false } }
       ]
     };
     const responseDataSchema: ObjectStoreMeta  = {
@@ -36,11 +42,13 @@ export class AppComponent implements OnInit {
       storeSchema: [
       ]
     };
+    // this.dbService.deleteDatabase();
     this.dbService.createObjectStore(storeSchema);
     this.dbService.createObjectStore(responseDataSchema);
     this.dbService.createObjectStore(fileDataSchema);
-    /* this.dbService.deleteDatabase(); */
   }
+
+
 }
 
 

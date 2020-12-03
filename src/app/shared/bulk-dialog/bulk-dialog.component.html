@@ -20,9 +20,9 @@
 <mat-dialog-content class="mat-typography">
   <section class="model-body" style="background: #ececec;" fxLayout="row">
     <div *ngFor="let c of data.checkedInfoList" fxLayout="column" style="border-right: 1px solid #cccc;padding: 10px;">
-      <span *ngFor="let m of data.metaDataInfoField">
-        <h4>{{m.label}}</h4>
-        <h5>{{c[m.label_id]}}</h5>
+      <span *ngFor="let m of data.l1headerList">
+        <h4>{{m.name}}</h4>
+        <h5>{{c[m.field]}}</h5>
       </span><hr>
     </div>
   </section><br><br>
